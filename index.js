@@ -22,7 +22,7 @@ $(function(){
     $('.product-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<button class="arrow__left__products  left"></button>',
+        prevArrow: '<button class="arrow__left__products  left__products"></button>',
         nextArrow: '<button class="arrow__right__produsts right"></button>'
     })
 });

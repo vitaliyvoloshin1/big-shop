@@ -225,6 +225,9 @@ body {
     cursor: pointer;
 }
 .left {
+    left: 20px;
+}
+.left__products {
     left: -40px;
 }
 .right {
