@@ -445,6 +445,9 @@ body {
     max-height: 100%;
 
 }
+.products {
+    margin-bottom: 80px;
+}
 .product__title {
     font-weight: bold;
     font-size: 25px;
@@ -597,7 +600,7 @@ body {
 }
 .products__more {
     text-align: center;
-    margin: 35px 0 80px;
+    margin: 35px 0 0;
 }
 .product__more-link {
     font-size: 15px;
