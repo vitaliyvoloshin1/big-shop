@@ -751,3 +751,131 @@ i {
 
 
 
+
+
+.breadcrumbs {
+    margin-bottom: 40px;
+}
+.breadcrumbs__list-item {
+    position: relative;
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    line-height: 18px;
+    font-size: 15px;
+    color: #C4C4C4;
+}
+.breadcrumbs__list-item::after {
+    content: "";
+    position: absolute;
+    top: 33%;
+    left: 91%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    border: solid #C4C4C4;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.breadcrumbs__list-item:last-child::after {
+    display: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
