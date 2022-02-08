@@ -24,5 +24,13 @@ $(function(){
         slidesToScroll: 1,
         prevArrow: '<button class="arrow__left__products  left__products"></button>',
         nextArrow: '<button class="arrow__right__produsts right"></button>'
-    })
+    });
+
+    $('.filter-style').styler();
+
+    $('.filter__item-drop').on('click', function() {
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle(200);
+    });
+
 });

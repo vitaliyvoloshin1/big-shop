@@ -503,7 +503,7 @@ body {
     background-image: url('./img/icon.png');
 }
 .product-item__favorite-active::before {
-    background-image: url('./img/icon-active.png');
+    background-image: url('./img/icon-active1.png');
 }
 .product-item__basket {
     position: absolute;
@@ -828,9 +828,9 @@ i {
 button.catalog__filters-btngrid {
     padding-top: 1px;
 }
-button.catalog__filters-btnline {
+/* button.catalog__filters-btnline {
 
-}
+} */
 .catalog__inner {
     display: flex;
 
@@ -838,6 +838,29 @@ button.catalog__filters-btnline {
 .catalog__inner-aside {
     min-width: 290px;
     margin-right: 10px;
+}
+.aside-filter__tabs {
+    display: flex;
+    justify-content: space-between;
+}
+.aside-filter__tab {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    width: 50%;
+}
+.aside-filter__tab.tab-active {
+    color: black;
+    font-weight: bold;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+}
+.aside-filter__tab.tab-active span {
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    padding-bottom: 7px;
 }
 .catalog__inner-list {
     display: flex;
@@ -873,13 +896,71 @@ color: blue;
 .pagination-list-item a {
     display: block;
 }
-
-
-
-
-
-
-
+.aside-filter__item-drop {
+    margin: 40px 0;
+}
+.aside-filter__item-title {
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 26px;
+}
+.filter__item-drop {
+    position: relative;
+    margin-bottom: 20px;
+}
+.filter__item-drop::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 0;
+    bottom: 5;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    border: solid #C4C4C4;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate( 45deg);
+}
+.filter__item-drop--active::before {
+    transform: rotate(180deg);
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 33%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    border: solid #C4C4C4;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate( -135deg);
+}
+.aside-filter__content {
+    display: flex;
+}
+.aside-filter__content-box {
+    width: 50%;
+}
+.aside-filter__content-label {
+    font-size: 14px;
+    line-height: 17px;
+}
 
 
 
