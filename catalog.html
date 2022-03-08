@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Kaushan+Script&family=Montserrat:wght@400;600&family=Poppins:ital,wght@0,200;1,300&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="jquery.formstyler.theme.css">
@@ -110,7 +110,7 @@
         <div class="container">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__list-item">
-                    <a href="#">Главная</a>
+                    <a href="./index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs__list-item">
                     <span>Гидроциклы</span>
@@ -173,9 +173,41 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="aside-filter__item-drop">sx</li>
-                                        <li class="aside-filter__item-drop">sx</li>
-                                        <li class="aside-filter__item-list">sx</li>
+                                        <li class="aside-filter__item-drop">
+                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Новинки</p>
+                                            <div class="aside-filter__content aside-filter__content-radio">
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-label">
+                                                        <input class="filter-style" name="radio" type="radio">
+                                                        Все
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-label">
+                                                        <input class="filter-style" name="radio" type="radio">
+                                                        Новинки
+                                                    </label>
+                                                </div>
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-label">
+                                                        <input class="filter-style" name="radio" type="radio">
+                                                        Акции
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter__item-drop">
+                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Цена</p>
+                                            <div class="aside-filter__content">
+                                                <input type="text" class="js-range-slider" name="my_range" value=""
+                                                data-min="100000"
+                                                data-max="1000000"
+                                                data-from="150000"
+                                                data-to="300000"
+                                                />
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter__item-list"></li>
                                     </ul>
                                 </form>
                             </div>

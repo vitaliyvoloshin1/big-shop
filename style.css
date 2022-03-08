@@ -615,6 +615,9 @@ body {
 }
 .product__more-link:hover {
     background-color:chartreuse;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
 }
 .banner {
     margin-bottom: 80px;
@@ -624,10 +627,13 @@ body {
     width: 1200px;
     height: 170px;
     background-color: rgb(118, 118, 231);
-    transition: all .3s;
+    transition: all .7s;
 }
 .banner__link:hover {
     box-shadow: 15px 15px 15px rgba(117, 117, 117, 0.603);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 .banner__text {
     left: 194px;
@@ -908,7 +914,7 @@ color: blue;
 }
 .filter__item-drop {
     position: relative;
-    margin-bottom: 20px;
+    cursor: pointer;
 }
 .filter__item-drop::before {
     cursor: pointer;
@@ -953,6 +959,8 @@ color: blue;
 }
 .aside-filter__content {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 .aside-filter__content-box {
     width: 50%;
@@ -961,19 +969,88 @@ color: blue;
     font-size: 14px;
     line-height: 17px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.jq-checkbox, .jq-radio {
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #C4C4C4;
+    border-radius: 1px;
+    box-shadow: none;
+    vertical-align: -1px;
+    margin: 0 8px 0 0;
+}
+.jq-checkbox.checked, .jq-radio.checked {
+    background: blue;
+    border: none;
+    box-shadow: none;
+}
+.aside-filter__content.aside-filter__content-radio {
+    flex-wrap: nowrap;
+}
+.irs--flat {
+    width: 100%;
+    margin-top: -15px;
+}
+.irs-from {
+    display: none;
+}
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    display: none;
+}
+.irs--flat .irs-min, .irs--flat .irs-max {
+    top: 60px;
+    padding: 0;
+    color: black;
+    font-size: 14px;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid #000;
+    line-height: 17px;
+    text-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+    visibility: visible !important;
+    padding-left: 27px;
+}
+.irs-min::before,
+.irs-max::before {
+    position: absolute;
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #C4C4C4;
+    left: 0;
+}
+.irs-min::before {
+    content: "от";
+}
+.irs-max::before {
+    content: "до";
+}
+.irs--flat .irs-line {
+    top: 25px;
+    height: 1px;
+    background-color: #e1e4e9;
+    border-radius: 0;
+}
+.irs--flat .irs-bar {
+    top: 25px;
+    height: 3px;
+    background-color: blue;
+}
+.irs--flat .irs-handle {
+    top: 22px;
+    width: 8px;
+    height: 8px;
+    border-color: blue;
+    border-radius: 50%;
+}
+.irs--flat .irs-handle {
+    top: 22px;
+    width: 16px;
+    height: 18px;
+    border-color: transparent;
+}
 
 
 
