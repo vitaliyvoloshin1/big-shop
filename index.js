@@ -32,6 +32,10 @@ $(function(){
         $(this).toggleClass('filter__item-drop--active');
         $(this).next().slideToggle(200);
     });
+    $('.filter__extra').on('click', function() {
+        $(this).toggleClass('filter__item-drop--active__more');
+        $(this).next().slideToggle(200);
+    });
 
     $(".js-range-slider").ionRangeSlider({
         type: "double",
