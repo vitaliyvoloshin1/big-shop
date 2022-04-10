@@ -78,6 +78,7 @@
 }
 .jq-selectbox__dropdown {
 	position: absolute;
+	right: -2px;
 }
 .jq-selectbox__search input {
 	-webkit-appearance: textfield;
