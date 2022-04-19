@@ -1,2 +1,2 @@
-https://vitaliyvoloshin1.github.io/big-shop/
-(временно добавлена страница для показа) https://vitaliyvoloshin1.github.io/big-shop/catalog.html
+https://vitaliyvoloshin1.github.io/big-shop-website/
+(временно добавлена страница для показа) https://vitaliyvoloshin1.github.io/big-shop-website/catalog.html
